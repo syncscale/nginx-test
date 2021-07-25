@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cp -a Dockerfile-alpine.template Dockerfile'
                 sh 'docker build . --tag nginx:alpine1'
             }
         }
